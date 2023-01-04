@@ -127,14 +127,11 @@ STATIC_URL = 'static/'
 
 
 
-# Default primary key field type
+# Default primary key field type 
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#valid extensions
 
-VALID_IMAGE_EXTENSIONS = [
-    ".jpg",
-    ".png",
-]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
